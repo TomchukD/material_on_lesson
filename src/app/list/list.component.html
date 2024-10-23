@@ -1,0 +1,11 @@
+<div>
+  <ul>
+    @for (item of itemsBook; track $index) {
+
+    <li>
+      Autor: {{ item.author }} / Book: {{ item.title }} F: {{ item.favorite }}
+    </li>
+    }
+  </ul>
+</div>
+<button (click)="clear()">clear</button>
